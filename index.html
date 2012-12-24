@@ -1,0 +1,44 @@
+<!doctype html>
+<head>
+    <meta charset="utf-8">
+
+    <title>Honeydew Cards</title>
+    <meta name="description" content="Honeydew Cards">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>-->
+    <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.1.15.min.js"></script>
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+    <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+
+    <script src="underscore-min.js"></script>
+    <script src="honeyDewCards.js"></script>
+</head>
+
+<body>
+<div data-role="content">
+
+    <ul data-role="listview" id="cards" data-count-theme="b">
+        <li data-role="list-divider">Honeydew Cards</li>
+    </ul>
+
+</div>
+
+<div data-role="popup" id="consume" data-overlay-theme="a" data-theme="c" style="max-width:400px;" class="ui-corner-all">
+    <div data-role="header" data-theme="a" class="ui-corner-top">
+        <h1>Use Card?</h1>
+    </div>
+    <div data-role="content" data-theme="d" class="ui-corner-bottom ui-content">
+        <h3 class="ui-title">Are you sure you want to use this Honeydew Card?</h3>
+        <p>This action cannot be undone.</p>
+        <a href="#" data-role="button" data-inline="true" data-rel="back" data-theme="c">Cancel</a>
+        <a href="#" id="consume-yes" data-role="button" data-inline="true" data-rel="back" data-transition="flow" data-theme="b">Yes!</a>
+    </div>
+</div>
+
+</body>
+
+</html>
