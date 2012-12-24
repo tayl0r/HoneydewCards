@@ -1,5 +1,5 @@
 $(function() {
-    Parse.initialize("LSdfOt9FztKG3X8oxZF8KyP59O6GTpGQePDG2lky", "0mTEFzgWAHc9p3Smqv3hnJig3tteHhKuwTXmxiqt");
+    Parse.initialize("", "");
 
     var Card = Parse.Object.extend("Card");
 
@@ -55,7 +55,7 @@ $(function() {
 
                 // find an image
                 jQuery.ajax({
-                    url: "https://api.instagram.com/v1/tags/" + results[i].get("tag") + "/media/recent?access_token=273125309.f59def8.25905b89f622442e91f136122e5c9f94",
+                    url: "https://api.instagram.com/v1/tags/" + results[i].get("tag") + "/media/recent?access_token=",
                     dataType: "jsonp",
                     context: $("#img" + i),
                     success: function(data) {
