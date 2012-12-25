@@ -13,7 +13,6 @@ $(function() {
 
         if (cards[currentCard].get("cnt") <= 0) {
             $("#id" + currentCard).unbind("click");
-            $("#id" + currentCard).unbind("tap");
             $("#id" + currentCard).attr("data-theme", "e");
         }
     });
